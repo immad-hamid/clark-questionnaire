@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+// Common Universal Styles
+
+html,
+body {
+    height: 100%;
+    background-color: #fdfdfd;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%),
+        linear-gradient(225deg, #ffffff 25%, transparent 25%),
+        linear-gradient(45deg, #ffffff 25%, transparent 25%),
+        linear-gradient(315deg, #ffffff 25%, #fdfdfd 25%);
+    background-position: 4px 0, 4px 0, 0 0, 0 0;
+    background-size: 8px 8px;
+    background-repeat: repeat;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+.app-toolbar {
+    position: fixed;
+    position: -webkit-fixed;
+    z-index: 9;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+
+.mb-5 {
+    margin-bottom: 20px;
+}
+
+.width-100 {
+    max-width: 100%;
+}
+
+.mat-radio-button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mat-card-title {
+    line-height: 30px;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+button.mat-focus-indicator.mat-button.mat-button-base.active {
+    background: rgb(255 255 255 / 20%);
+}
