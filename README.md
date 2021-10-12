@@ -8,24 +8,24 @@
     `**.ts`
 -   [pages]
     * [component-or-page-folder]
-    --`*-routing.module.ts`
-    --`*.component.html`
-    --`*.component.scss`
-    --`*.component.spec.ts`
-    --`*.component.ts`
-    --`*.module.ts`
+    * `*-routing.module.ts`
+    * `*.component.html`
+    * `*.component.scss`
+    * `*.component.spec.ts`
+    * `*.component.ts`
+    * `*.module.ts`
 -   [shared]
     * [shared-components-folder]
-    --`*.component.html`
-    --`*.component.scss`
-    --`*.component.spec.ts`
-    --`*.component.ts`
-    --`*.module.ts`
+    * `*.component.html`
+    * `*.component.scss`
+    * `*.component.spec.ts`
+    * `*.component.ts`
+    * `*.module.ts`
     * [shared-modules-folder]
-    --`*.module.ts`
+    * `*.module.ts`
     * [shared-services-folder]
-    --`*.service.ts`
-    --`*.service.spec.ts`
+    * `*.service.ts`
+    * `*.service.spec.ts`
 -   [assets]
 
 ## Development Server
