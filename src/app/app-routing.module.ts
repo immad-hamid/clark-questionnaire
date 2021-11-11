@@ -13,13 +13,6 @@ const routes: Routes = [
             import('./pages/questionnaire/questionnaire.module').then(
                 (m) => m.QuestionnaireModule
             )
-    },
-    {
-        path: 'questionnaire/v2',
-        loadChildren: () =>
-            import('./pages/questionnaire-v2/questionnaire-v2.module').then(
-                (m) => m.QuestionnaireV2Module
-            )
     }
 ];
 
