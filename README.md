@@ -7,25 +7,24 @@
 -   [interfaces]
     `**.ts`
 -   [pages]
-    * [component-or-page-folder]
-    * `*-routing.module.ts`
-    * `*.component.html`
-    * `*.component.scss`
-    * `*.component.spec.ts`
-    * `*.component.ts`
-    * `*.module.ts`
+    -   [component-or-page-folder]
+    -   `*-routing.module.ts`
+    -   `*.component.html`
+    -   `*.component.scss`
+    -   `*.component.spec.ts`
+    -   `*.component.ts`
+    -   `*.module.ts`
 -   [shared]
-    * [shared-components-folder]
-    * `*.component.html`
-    * `*.component.scss`
-    * `*.component.spec.ts`
-    * `*.component.ts`
-    * `*.module.ts`
-    * [shared-modules-folder]
-    * `*.module.ts`
-    * [shared-services-folder]
-    * `*.service.ts`
-    * `*.service.spec.ts`
+    -   [shared-components-folder]
+    -   `*.component.html`
+    -   `*.component.scss`
+    -   `*.component.spec.ts`
+    -   `*.component.ts`
+    -   `*.module.ts`
+    -   [shared-modules-folder]
+    -   `*.module.ts`
+    -   [shared-services-folder]
+    -   `*.service.ts`
 -   [assets]
 
 ## Development Server
