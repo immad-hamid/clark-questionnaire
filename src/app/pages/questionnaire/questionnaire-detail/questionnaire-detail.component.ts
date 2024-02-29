@@ -1,8 +1,8 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import {
-    FormBuilder,
-    FormControl,
-    FormGroup,
+    UntypedFormBuilder,
+    UntypedFormControl,
+    UntypedFormGroup,
     Validators
 } from '@angular/forms';
 import { QuestionnaireI } from './../../../interfaces/interfaces';
@@ -17,13 +17,13 @@ import { SnackBarService } from '../../../shared/services/common/snack-bar.servi
 })
 export class QuestionnaireDetailComponent implements OnInit, OnDestroy {
     @Input() questionnaire: QuestionnaireI[];
-    questionnaireForm: FormGroup;
+    questionnaireForm: UntypedFormGroup;
 
     get selectionType(): typeof SelectionType {
         return SelectionType;
     }
 
-    constructor(private fb: FormBuilder, public snackBar: SnackBarService) {}
+    constructor(private fb: UntypedFormBuilder, public snackBar: SnackBarService) {}
 
     ngOnInit(): void {
         this.init();
@@ -84,7 +84,7 @@ export class QuestionnaireDetailComponent implements OnInit, OnDestroy {
         if (!controls?.length) return;
 
         for (let control of controls) {
-            const newFormControl = new FormControl();
+            const newFormControl = new UntypedFormControl();
 
             if (control.required) {
                 newFormControl.setValidators(Validators.required);
